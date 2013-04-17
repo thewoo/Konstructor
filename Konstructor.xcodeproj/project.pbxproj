@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B277158171EBDEF002244AD /* ProjectReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B277156171EBDEF002244AD /* ProjectReviewViewController.m */; };
+		9B277159171EBDEF002244AD /* ProjectReviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B277157171EBDEF002244AD /* ProjectReviewViewController.xib */; };
 		9BE98267171D596E00E60DA2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BE98266171D596E00E60DA2 /* UIKit.framework */; };
 		9BE98269171D596E00E60DA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BE98268171D596E00E60DA2 /* Foundation.framework */; };
 		9BE9826B171D596E00E60DA2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BE9826A171D596E00E60DA2 /* CoreGraphics.framework */; };
@@ -16,11 +18,14 @@
 		9BE98279171D596E00E60DA2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BE98278171D596E00E60DA2 /* Default.png */; };
 		9BE9827B171D596E00E60DA2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BE9827A171D596E00E60DA2 /* Default@2x.png */; };
 		9BE9827D171D596E00E60DA2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BE9827C171D596E00E60DA2 /* Default-568h@2x.png */; };
-		9BE98280171D596E00E60DA2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BE9827F171D596E00E60DA2 /* ViewController.m */; };
-		9BE98283171D596E00E60DA2 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BE98281171D596E00E60DA2 /* ViewController.xib */; };
+		9BEF42B8171D7263007ECF83 /* ProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BEF42B6171D7263007ECF83 /* ProjectsViewController.m */; };
+		9BEF42B9171D7263007ECF83 /* ProjectsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BEF42B7171D7263007ECF83 /* ProjectsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B277155171EBDEF002244AD /* ProjectReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectReviewViewController.h; sourceTree = "<group>"; };
+		9B277156171EBDEF002244AD /* ProjectReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectReviewViewController.m; sourceTree = "<group>"; };
+		9B277157171EBDEF002244AD /* ProjectReviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectReviewViewController.xib; sourceTree = "<group>"; };
 		9BE98263171D596E00E60DA2 /* Konstructor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Konstructor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BE98266171D596E00E60DA2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9BE98268171D596E00E60DA2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -34,9 +39,9 @@
 		9BE98278171D596E00E60DA2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		9BE9827A171D596E00E60DA2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		9BE9827C171D596E00E60DA2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		9BE9827E171D596E00E60DA2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9BE9827F171D596E00E60DA2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		9BE98282171D596E00E60DA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		9BEF42B5171D7263007ECF83 /* ProjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectsViewController.h; sourceTree = "<group>"; };
+		9BEF42B6171D7263007ECF83 /* ProjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectsViewController.m; sourceTree = "<group>"; };
+		9BEF42B7171D7263007ECF83 /* ProjectsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +90,12 @@
 			children = (
 				9BE98275171D596E00E60DA2 /* AppDelegate.h */,
 				9BE98276171D596E00E60DA2 /* AppDelegate.m */,
-				9BE9827E171D596E00E60DA2 /* ViewController.h */,
-				9BE9827F171D596E00E60DA2 /* ViewController.m */,
-				9BE98281171D596E00E60DA2 /* ViewController.xib */,
+				9BEF42B5171D7263007ECF83 /* ProjectsViewController.h */,
+				9BEF42B6171D7263007ECF83 /* ProjectsViewController.m */,
+				9BEF42B7171D7263007ECF83 /* ProjectsViewController.xib */,
+				9B277155171EBDEF002244AD /* ProjectReviewViewController.h */,
+				9B277156171EBDEF002244AD /* ProjectReviewViewController.m */,
+				9B277157171EBDEF002244AD /* ProjectReviewViewController.xib */,
 				9BE9826D171D596E00E60DA2 /* Supporting Files */,
 			);
 			path = Konstructor;
@@ -162,7 +170,8 @@
 				9BE98279171D596E00E60DA2 /* Default.png in Resources */,
 				9BE9827B171D596E00E60DA2 /* Default@2x.png in Resources */,
 				9BE9827D171D596E00E60DA2 /* Default-568h@2x.png in Resources */,
-				9BE98283171D596E00E60DA2 /* ViewController.xib in Resources */,
+				9BEF42B9171D7263007ECF83 /* ProjectsViewController.xib in Resources */,
+				9B277159171EBDEF002244AD /* ProjectReviewViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +184,8 @@
 			files = (
 				9BE98273171D596E00E60DA2 /* main.m in Sources */,
 				9BE98277171D596E00E60DA2 /* AppDelegate.m in Sources */,
-				9BE98280171D596E00E60DA2 /* ViewController.m in Sources */,
+				9BEF42B8171D7263007ECF83 /* ProjectsViewController.m in Sources */,
+				9B277158171EBDEF002244AD /* ProjectReviewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,14 +198,6 @@
 				9BE98270171D596E00E60DA2 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		9BE98281171D596E00E60DA2 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9BE98282171D596E00E60DA2 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -298,6 +300,7 @@
 				9BE98288171D596E00E60DA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ProjectsViewController.h
 //  Konstructor
 //
 //  Created by Jorge Pardo on 16/04/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ProjectsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end
