@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		9B277158171EBDEF002244AD /* ProjectReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B277156171EBDEF002244AD /* ProjectReviewViewController.m */; };
 		9B277159171EBDEF002244AD /* ProjectReviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B277157171EBDEF002244AD /* ProjectReviewViewController.xib */; };
+		9B69177F171FDE62002ED88B /* WorkingSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B69177D171FDE62002ED88B /* WorkingSheetViewController.m */; };
+		9B691780171FDE62002ED88B /* WorkingSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B69177E171FDE62002ED88B /* WorkingSheetViewController.xib */; };
+		9B80ED77172183D300A61CB2 /* WorkersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B80ED75172183D300A61CB2 /* WorkersViewController.m */; };
+		9B80ED78172183D300A61CB2 /* WorkersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B80ED76172183D300A61CB2 /* WorkersViewController.xib */; };
+		9B80ED7C17218EBC00A61CB2 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B80ED7A17218EBC00A61CB2 /* TestViewController.m */; };
+		9B80ED7D17218EBC00A61CB2 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B80ED7B17218EBC00A61CB2 /* TestViewController.xib */; };
 		9BE98267171D596E00E60DA2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BE98266171D596E00E60DA2 /* UIKit.framework */; };
 		9BE98269171D596E00E60DA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BE98268171D596E00E60DA2 /* Foundation.framework */; };
 		9BE9826B171D596E00E60DA2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BE9826A171D596E00E60DA2 /* CoreGraphics.framework */; };
@@ -26,6 +32,15 @@
 		9B277155171EBDEF002244AD /* ProjectReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectReviewViewController.h; sourceTree = "<group>"; };
 		9B277156171EBDEF002244AD /* ProjectReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectReviewViewController.m; sourceTree = "<group>"; };
 		9B277157171EBDEF002244AD /* ProjectReviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectReviewViewController.xib; sourceTree = "<group>"; };
+		9B69177C171FDE62002ED88B /* WorkingSheetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkingSheetViewController.h; sourceTree = "<group>"; };
+		9B69177D171FDE62002ED88B /* WorkingSheetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkingSheetViewController.m; sourceTree = "<group>"; };
+		9B69177E171FDE62002ED88B /* WorkingSheetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkingSheetViewController.xib; sourceTree = "<group>"; };
+		9B80ED74172183D300A61CB2 /* WorkersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkersViewController.h; sourceTree = "<group>"; };
+		9B80ED75172183D300A61CB2 /* WorkersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkersViewController.m; sourceTree = "<group>"; };
+		9B80ED76172183D300A61CB2 /* WorkersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkersViewController.xib; sourceTree = "<group>"; };
+		9B80ED7917218EBC00A61CB2 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		9B80ED7A17218EBC00A61CB2 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		9B80ED7B17218EBC00A61CB2 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		9BE98263171D596E00E60DA2 /* Konstructor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Konstructor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BE98266171D596E00E60DA2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9BE98268171D596E00E60DA2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,6 +73,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B69177B171FDE00002ED88B /* OwnWorkers */ = {
+			isa = PBXGroup;
+			children = (
+				9B80ED74172183D300A61CB2 /* WorkersViewController.h */,
+				9B80ED75172183D300A61CB2 /* WorkersViewController.m */,
+				9B80ED76172183D300A61CB2 /* WorkersViewController.xib */,
+				9B69177C171FDE62002ED88B /* WorkingSheetViewController.h */,
+				9B69177D171FDE62002ED88B /* WorkingSheetViewController.m */,
+				9B69177E171FDE62002ED88B /* WorkingSheetViewController.xib */,
+				9B80ED7917218EBC00A61CB2 /* TestViewController.h */,
+				9B80ED7A17218EBC00A61CB2 /* TestViewController.m */,
+				9B80ED7B17218EBC00A61CB2 /* TestViewController.xib */,
+			);
+			name = OwnWorkers;
+			sourceTree = "<group>";
+		};
+		9B80ED731721829300A61CB2 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				9BEF42B5171D7263007ECF83 /* ProjectsViewController.h */,
+				9BEF42B6171D7263007ECF83 /* ProjectsViewController.m */,
+				9BEF42B7171D7263007ECF83 /* ProjectsViewController.xib */,
+				9B277155171EBDEF002244AD /* ProjectReviewViewController.h */,
+				9B277156171EBDEF002244AD /* ProjectReviewViewController.m */,
+				9B277157171EBDEF002244AD /* ProjectReviewViewController.xib */,
+			);
+			name = Projects;
+			sourceTree = "<group>";
+		};
 		9BE9825A171D596E00E60DA2 = {
 			isa = PBXGroup;
 			children = (
@@ -90,12 +134,8 @@
 			children = (
 				9BE98275171D596E00E60DA2 /* AppDelegate.h */,
 				9BE98276171D596E00E60DA2 /* AppDelegate.m */,
-				9BEF42B5171D7263007ECF83 /* ProjectsViewController.h */,
-				9BEF42B6171D7263007ECF83 /* ProjectsViewController.m */,
-				9BEF42B7171D7263007ECF83 /* ProjectsViewController.xib */,
-				9B277155171EBDEF002244AD /* ProjectReviewViewController.h */,
-				9B277156171EBDEF002244AD /* ProjectReviewViewController.m */,
-				9B277157171EBDEF002244AD /* ProjectReviewViewController.xib */,
+				9B80ED731721829300A61CB2 /* Projects */,
+				9B69177B171FDE00002ED88B /* OwnWorkers */,
 				9BE9826D171D596E00E60DA2 /* Supporting Files */,
 			);
 			path = Konstructor;
@@ -172,6 +212,9 @@
 				9BE9827D171D596E00E60DA2 /* Default-568h@2x.png in Resources */,
 				9BEF42B9171D7263007ECF83 /* ProjectsViewController.xib in Resources */,
 				9B277159171EBDEF002244AD /* ProjectReviewViewController.xib in Resources */,
+				9B691780171FDE62002ED88B /* WorkingSheetViewController.xib in Resources */,
+				9B80ED78172183D300A61CB2 /* WorkersViewController.xib in Resources */,
+				9B80ED7D17218EBC00A61CB2 /* TestViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +229,9 @@
 				9BE98277171D596E00E60DA2 /* AppDelegate.m in Sources */,
 				9BEF42B8171D7263007ECF83 /* ProjectsViewController.m in Sources */,
 				9B277158171EBDEF002244AD /* ProjectReviewViewController.m in Sources */,
+				9B69177F171FDE62002ED88B /* WorkingSheetViewController.m in Sources */,
+				9B80ED77172183D300A61CB2 /* WorkersViewController.m in Sources */,
+				9B80ED7C17218EBC00A61CB2 /* TestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

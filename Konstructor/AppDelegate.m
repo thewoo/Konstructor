@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ProjectsViewController.h"
+#import "WorkersViewController.h"
 
 
 @implementation AppDelegate
@@ -19,10 +20,22 @@
     ProjectsViewController *projectsViewController = [[ProjectsViewController alloc] initWithNibName:@"ProjectsViewController" bundle:nil];
     projectsViewController.title = @"Proyectos";
     
-    self.navController = [[UINavigationController alloc] initWithRootViewController:projectsViewController];
-    self.navController.navigationBar.barStyle = UIBarStyleBlack;
+    UINavigationController *projectsNavigationController = [[UINavigationController alloc] initWithRootViewController:projectsViewController];
+    projectsNavigationController.navigationBar.barStyle = UIBarStyleBlack;
     
-    self.window.rootViewController = self.navController;
+    
+    WorkersViewController *workersViewController = [[WorkersViewController alloc] initWithNibName:@"WorkersViewController" bundle:nil];
+    workersViewController.title = @"Trabajadores";
+    
+    UINavigationController *workersNavigationController = [[UINavigationController alloc] initWithRootViewController:workersViewController];
+    workersNavigationController.navigationBar.barStyle = UIBarStyleBlack;
+    
+    
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.viewControllers = @[projectsNavigationController, workersNavigationController];
+    
+    self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
 }
