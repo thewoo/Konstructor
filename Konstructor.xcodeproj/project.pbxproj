@@ -15,6 +15,7 @@
 		9B80ED78172183D300A61CB2 /* WorkersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B80ED76172183D300A61CB2 /* WorkersViewController.xib */; };
 		9B80ED7C17218EBC00A61CB2 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B80ED7A17218EBC00A61CB2 /* TestViewController.m */; };
 		9B80ED7D17218EBC00A61CB2 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B80ED7B17218EBC00A61CB2 /* TestViewController.xib */; };
+		9BA1101517292FE4000203E6 /* KonstructorModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9BA1101317292FE4000203E6 /* KonstructorModel.xcdatamodeld */; };
 		9BE98267171D596E00E60DA2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BE98266171D596E00E60DA2 /* UIKit.framework */; };
 		9BE98269171D596E00E60DA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BE98268171D596E00E60DA2 /* Foundation.framework */; };
 		9BE9826B171D596E00E60DA2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BE9826A171D596E00E60DA2 /* CoreGraphics.framework */; };
@@ -41,6 +42,7 @@
 		9B80ED7917218EBC00A61CB2 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		9B80ED7A17218EBC00A61CB2 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		9B80ED7B17218EBC00A61CB2 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		9BA1101417292FE4000203E6 /* KonstructorModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KonstructorModel.xcdatamodel; sourceTree = "<group>"; };
 		9BE98263171D596E00E60DA2 /* Konstructor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Konstructor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BE98266171D596E00E60DA2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9BE98268171D596E00E60DA2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -102,6 +104,14 @@
 			name = Projects;
 			sourceTree = "<group>";
 		};
+		9BA1101217292FB3000203E6 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9BA1101317292FE4000203E6 /* KonstructorModel.xcdatamodeld */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
 		9BE9825A171D596E00E60DA2 = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +144,7 @@
 			children = (
 				9BE98275171D596E00E60DA2 /* AppDelegate.h */,
 				9BE98276171D596E00E60DA2 /* AppDelegate.m */,
+				9BA1101217292FB3000203E6 /* CoreData */,
 				9B80ED731721829300A61CB2 /* Projects */,
 				9B69177B171FDE00002ED88B /* OwnWorkers */,
 				9BE9826D171D596E00E60DA2 /* Supporting Files */,
@@ -232,6 +243,7 @@
 				9B69177F171FDE62002ED88B /* WorkingSheetViewController.m in Sources */,
 				9B80ED77172183D300A61CB2 /* WorkersViewController.m in Sources */,
 				9B80ED7C17218EBC00A61CB2 /* TestViewController.m in Sources */,
+				9BA1101517292FE4000203E6 /* KonstructorModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +361,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9BA1101317292FE4000203E6 /* KonstructorModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9BA1101417292FE4000203E6 /* KonstructorModel.xcdatamodel */,
+			);
+			currentVersion = 9BA1101417292FE4000203E6 /* KonstructorModel.xcdatamodel */;
+			path = KonstructorModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9BE9825B171D596E00E60DA2 /* Project object */;
 }
