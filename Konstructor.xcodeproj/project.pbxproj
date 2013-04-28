@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41F4CFAA1722E4F0001B1631 /* WorkerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F4CFA91722E4F0001B1631 /* WorkerView.m */; };
 		9B277158171EBDEF002244AD /* ProjectReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B277156171EBDEF002244AD /* ProjectReviewViewController.m */; };
 		9B277159171EBDEF002244AD /* ProjectReviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B277157171EBDEF002244AD /* ProjectReviewViewController.xib */; };
 		9B69177F171FDE62002ED88B /* WorkingSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B69177D171FDE62002ED88B /* WorkingSheetViewController.m */; };
@@ -29,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41F4CFA81722E4F0001B1631 /* WorkerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkerView.h; sourceTree = "<group>"; };
+		41F4CFA91722E4F0001B1631 /* WorkerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkerView.m; sourceTree = "<group>"; };
 		9B277155171EBDEF002244AD /* ProjectReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectReviewViewController.h; sourceTree = "<group>"; };
 		9B277156171EBDEF002244AD /* ProjectReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectReviewViewController.m; sourceTree = "<group>"; };
 		9B277157171EBDEF002244AD /* ProjectReviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectReviewViewController.xib; sourceTree = "<group>"; };
@@ -76,6 +79,8 @@
 		9B69177B171FDE00002ED88B /* OwnWorkers */ = {
 			isa = PBXGroup;
 			children = (
+				41F4CFA81722E4F0001B1631 /* WorkerView.h */,
+				41F4CFA91722E4F0001B1631 /* WorkerView.m */,
 				9B80ED74172183D300A61CB2 /* WorkersViewController.h */,
 				9B80ED75172183D300A61CB2 /* WorkersViewController.m */,
 				9B80ED76172183D300A61CB2 /* WorkersViewController.xib */,
@@ -232,6 +237,7 @@
 				9B69177F171FDE62002ED88B /* WorkingSheetViewController.m in Sources */,
 				9B80ED77172183D300A61CB2 /* WorkersViewController.m in Sources */,
 				9B80ED7C17218EBC00A61CB2 /* TestViewController.m in Sources */,
+				41F4CFAA1722E4F0001B1631 /* WorkerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,10 +314,14 @@
 		9BE98287171D596E00E60DA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Vicente Pazo (3DU8HY9ZH2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Vicente Pazo (3DU8HY9ZH2)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Konstructor/Konstructor-Prefix.pch";
 				INFOPLIST_FILE = "Konstructor/Konstructor-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1B53EE95-B262-4BBF-9574-3BEB2EDE5564";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1B53EE95-B262-4BBF-9574-3BEB2EDE5564";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -319,10 +329,14 @@
 		9BE98288171D596E00E60DA2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Vicente Pazo (3DU8HY9ZH2)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Konstructor/Konstructor-Prefix.pch";
 				INFOPLIST_FILE = "Konstructor/Konstructor-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1B53EE95-B262-4BBF-9574-3BEB2EDE5564";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
