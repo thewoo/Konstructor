@@ -14,9 +14,12 @@
 @property BOOL isTapped;
 @property BOOL isTranformingView;
 @property BOOL onFirstHalf;
+@property BOOL onWeekView;
+
 @property (nonatomic, weak) IBOutlet UIView *draggingView;
 @property (nonatomic, weak) IBOutlet UIView *calendarView;
 @property (nonatomic, weak) IBOutlet UIView *transformingView;
+@property (nonatomic, weak) IBOutlet UIView *weekView;
 
 @property float previousX;
 @property float previousY;
@@ -32,7 +35,7 @@
 -(void)viewTapped:(UITapGestureRecognizer *)tap {
     self.isTapped = YES;
     NSLog(@"%d",self.isTapped);
-
+    
 }
 
 
@@ -43,16 +46,16 @@
     
     self.isTapped = CGRectContainsPoint(self.draggingView.bounds, [[touches anyObject] locationInView:self.draggingView]);
     self.isTranformingView = CGRectContainsPoint(self.transformingView.bounds, [[touches anyObject] locationInView:self.transformingView]);
-        
+    
     if (self.isTranformingView) {
         
         CGRect rect = self.transformingView.bounds;
         rect = CGRectMake(rect.origin.x, rect.origin.y, rect.size.width*0.75, rect.size.height);
         
-//        UIView *rectView = [[UIView alloc] initWithFrame:rect];
-//        rectView.backgroundColor = [UIColor redColor];
-//        
-//        [self.transformingView addSubview:rectView];
+        //        UIView *rectView = [[UIView alloc] initWithFrame:rect];
+        //        rectView.backgroundColor = [UIColor redColor];
+        //
+        //        [self.transformingView addSubview:rectView];
         
         self.onFirstHalf = CGRectContainsPoint(rect, [[touches anyObject] locationInView:self.transformingView]);
     }
@@ -60,14 +63,42 @@
     
     self.previousX = [[touches anyObject] locationInView:self.view].x;
     self.previousY = [[touches anyObject] locationInView:self.view].y;
-        
+    
 }
 
 
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
-        
+    
     if (self.isTapped) {
         self.draggingView.center = [[touches anyObject] locationInView:self.view];
+        
+        self.onWeekView = CGRectContainsPoint(self.weekView.bounds, [[touches anyObject] locationInView:self.weekView]);
+        
+        if (self.onWeekView) {
+            
+            UIView *shadowView = [[UIView alloc] initWithFrame:self.view.frame];
+            shadowView.backgroundColor = [UIColor blackColor];
+            shadowView.alpha = 0;
+            
+            [self.view addSubview:shadowView];
+            
+            [self.view bringSubviewToFront:self.weekView];
+            [self.view bringSubviewToFront:self.draggingView];
+            
+            [UIView animateWithDuration:0.5 animations:^{
+                
+                shadowView.alpha = 0.8;
+                self.weekView.frame = CGRectMake(5, self.weekView.frame.origin.y, 310, self.weekView.frame.size.height);
+                self.weekView.backgroundColor = [UIColor cyanColor];
+                
+                self.draggingView.backgroundColor = [UIColor purpleColor];
+//                self.draggingView.frame = CGRectMake(self.draggingView.frame.origin.x, self.draggingView.frame.origin.y, self.draggingView.frame.size.width, self.draggingView.frame.size.height*0.5);
+                
+            }];
+            
+            
+        }
+        
     }
     
     
@@ -97,9 +128,6 @@
         }
     }
     
-    
-    
-        
     
 }
 
