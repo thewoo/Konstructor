@@ -248,6 +248,7 @@
 				9B69177F171FDE62002ED88B /* WorkingSheetViewController.m in Sources */,
 				9B80ED77172183D300A61CB2 /* WorkersViewController.m in Sources */,
 				9B80ED7C17218EBC00A61CB2 /* TestViewController.m in Sources */,
+				41F4CFAA1722E4F0001B1631 /* WorkerView.m in Sources */,
 				9BA1101517292FE4000203E6 /* KonstructorModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

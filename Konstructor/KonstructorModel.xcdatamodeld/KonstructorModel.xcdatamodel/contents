@@ -1,4 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12C60" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+    <entity name="Bill" syncable="YES">
+        <attribute name="concept" attributeType="String" syncable="YES"/>
+        <attribute name="payed" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="receipt" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="totalAmount" attributeType="Integer 64" syncable="YES"/>
+        <relationship name="payments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Payment" inverseName="bill" inverseEntity="Payment" syncable="YES"/>
+    </entity>
+    <entity name="Client" parentEntity="Person" syncable="YES"/>
+    <entity name="Employee" parentEntity="Person" syncable="YES"/>
+    <entity name="Industrial" parentEntity="Person" syncable="YES"/>
+    <entity name="Payment" syncable="YES">
+        <attribute name="amount" attributeType="Integer 64" syncable="YES"/>
+        <attribute name="madeOn" attributeType="Date" syncable="YES"/>
+        <attribute name="type" attributeType="Integer 16" syncable="YES"/>
+        <relationship name="bill" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Bill" inverseName="payments" inverseEntity="Bill" syncable="YES"/>
+        <relationship name="doneBy" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="payment" inverseEntity="Person" syncable="YES"/>
+    </entity>
+    <entity name="Person" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="phoneNumber" attributeType="Integer 64" syncable="YES"/>
+        <relationship name="payment" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Payment" inverseName="doneBy" inverseEntity="Payment" syncable="YES"/>
+    </entity>
+    <entity name="Project" syncable="YES">
+        <attribute name="address" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="User" parentEntity="Person" syncable="YES"/>
+    <elements>
+        <element name="Project" positionX="-108" positionY="-702" width="128" height="58"/>
+        <element name="Person" positionX="180" positionY="-378" width="128" height="103"/>
+        <element name="Client" positionX="196" positionY="-648" width="128" height="43"/>
+        <element name="User" positionX="304" positionY="-592" width="128" height="43"/>
+        <element name="Industrial" positionX="394" positionY="-358" width="128" height="43"/>
+        <element name="Employee" positionX="367" positionY="-477" width="128" height="43"/>
+        <element name="Payment" positionX="-65" positionY="-289" width="128" height="118"/>
+        <element name="Bill" positionX="-279" positionY="-442" width="128" height="118"/>
+    </elements>
 </model>
