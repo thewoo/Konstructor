@@ -6,9 +6,11 @@
     <entity name="Payment" syncable="YES">
         <attribute name="amount" attributeType="Integer 64" syncable="YES"/>
         <attribute name="concept" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="invoice" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
         <attribute name="madeOn" attributeType="Date" syncable="YES"/>
         <attribute name="type" attributeType="Integer 16" syncable="YES"/>
         <relationship name="doneBy" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="paymentsDone" inverseEntity="Person" syncable="YES"/>
+        <relationship name="newRelationship" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Project" inverseName="newRelationship" inverseEntity="Project" syncable="YES"/>
         <relationship name="paidTo" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="paymentsReceived" inverseEntity="Person" syncable="YES"/>
     </entity>
     <entity name="Person" syncable="YES">
@@ -18,23 +20,31 @@
         <attribute name="phoneNumber" attributeType="Integer 64" syncable="YES"/>
         <relationship name="owner" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Project" inverseName="owner" inverseEntity="Project" syncable="YES"/>
         <relationship name="paymentsDone" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Payment" inverseName="doneBy" inverseEntity="Payment" syncable="YES"/>
-        <relationship name="paymentsReceived" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Payment" inverseName="paidTo" inverseEntity="Payment" syncable="YES"/>
+        <relationship name="paymentsReceived" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Payment" inverseName="paidTo" inverseEntity="Payment" syncable="YES"/>
     </entity>
     <entity name="Project" syncable="YES">
         <attribute name="address" attributeType="String" syncable="YES"/>
         <attribute name="budget" optional="YES" attributeType="Integer 64" syncable="YES"/>
         <attribute name="endDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="newRelationship" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Payment" inverseName="newRelationship" inverseEntity="Payment" syncable="YES"/>
         <relationship name="owner" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="owner" inverseEntity="Person" syncable="YES"/>
+    </entity>
+    <entity name="Task" syncable="YES">
+        <attribute name="completed" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="initialCost" optional="YES" attributeType="Integer 64" syncable="YES"/>
+        <attribute name="taskDescription" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="User" parentEntity="Person" syncable="YES"/>
     <elements>
         <element name="Client" positionX="196" positionY="-648" width="128" height="43"/>
         <element name="Employee" positionX="367" positionY="-477" width="128" height="43"/>
         <element name="Industrial" positionX="394" positionY="-358" width="128" height="43"/>
-        <element name="Payment" positionX="-117" positionY="-412" width="128" height="133"/>
+        <element name="Payment" positionX="-380" positionY="-415" width="128" height="163"/>
         <element name="Person" positionX="198" positionY="-405" width="128" height="148"/>
-        <element name="Project" positionX="-81" positionY="-703" width="128" height="118"/>
+        <element name="Project" positionX="-81" positionY="-703" width="128" height="133"/>
         <element name="User" positionX="304" positionY="-592" width="128" height="43"/>
+        <element name="Task" positionX="-72" positionY="-207" width="128" height="103"/>
     </elements>
 </model>
